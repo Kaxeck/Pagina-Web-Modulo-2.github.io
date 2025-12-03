@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: #F5F7FA;
 }
@@ -8,4 +12,47 @@ header {
 
 footer {
     background-color: #34495E;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+p, button, li {
+    font-family: "Inter", sans-serif;
+}
+
+.logo-img {
+    width: 120px;
+}
+
+.home-img {
+    width: 100%;
+}
+
+.producto-tarjeta {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    width: 250px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto-img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.idea-tarjeta {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    width: 300px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}   
+
+.idea-img {
+    width: 300px;
 }
