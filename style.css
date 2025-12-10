@@ -93,6 +93,7 @@ h3 {
 }
 .nav-izq {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
 }
@@ -373,8 +374,7 @@ footer h2, footer h3, footer p {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 400px;
-    max-width: 100%;
+    width: 300px;
 }
 /* Estilos para el botón dentro del formulario de suscripción */
 .form-suscripcion button {
@@ -413,6 +413,7 @@ footer h2, footer h3, footer p {
     align-items: center;
     color: white;
     text-decoration: none;
+    flex-wrap: wrap;
     margin: 10px 0px;
 }
 /* Estilos para la lista de informacion dentro del footer */
