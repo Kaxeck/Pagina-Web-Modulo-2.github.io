@@ -9,6 +9,10 @@
     <!-- Conexion a las fuentes de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Conexion a paque de iconos Boxicons -->
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/transformations.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -21,11 +25,16 @@
         <section class="navegacion">
             <nav>
                 <ul class="lista-navegacion">
-                    <li><a href="#home_section"><img src="img/Logo.png" alt="Logo de Nordic" class="logo-img"></a></li>
-                    <li><a href="#catalogo">Catalogo</a></li>
-                    <li><a href="#ideas">Ideas</a></li>
-                    <li><a href="">[Carrito]</a></li>
-                    <li><a href="">[Busqueda]</a></li>
+                    <div class="nav-izq">
+                        <li><a href="#home_section"><img src="img/Logo.png" alt="Logo de Nordic" class="logo-img"></a></li>
+                        <li><a href="#promociones">Promociones</a></li>
+                        <li><a href="#catalogo">Catalogo</a></li>
+                        <li><a href="#ideas">Ideas</a></li>
+                    </div>
+                    <div class="nav-der">
+                        <li><a href=""><i class='bx  bx-search bx-md'></i> </a></li>
+                        <li><a href=""><i class='bx  bx-cart bx-md'></i> </a></li>
+                    </div>
                 </ul>
             </nav>
         </section>
@@ -36,6 +45,11 @@
             <h1>Home</h1>
             <p>Bienvenido a nuestra tienda de muebles. Encuentra los mejores diseños para tu hogar.</p>
             <img src="img/Presentacion.png" alt="Presentacion de Nordic" class="home-img">
+        </section>
+        <!-- Seccion promociones -->
+        <section id="promociones">
+            <h2>Promociones</h2>
+            
         </section>
         <!-- Seccion catalogo -->
         <section class="espacio_lateral" id="catalogo">
@@ -52,7 +66,7 @@
                     <span class="precios-original">$520</span>
                     <span class="precios-descuento">$250</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
             <!-- Producto 2 -->
             <div class="producto-tarjeta">
@@ -64,7 +78,7 @@
                     <span class="precios-original">$450</span>
                     <span class="precios-descuento">$350</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
             <!-- Producto 3 -->
             <div class="producto-tarjeta">
@@ -76,7 +90,7 @@
                     <span class="precios-original">$800</span>
                     <span class="precios-descuento">$600</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
             <!-- Producto 4 -->
             <div class="producto-tarjeta">
@@ -86,7 +100,7 @@
                 <div class="precios">
                     <span class="precios-descuento">$450</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
             <!-- Producto 5 -->
             <div class="producto-tarjeta">
@@ -96,7 +110,7 @@
                 <div class="precios">
                     <span class="precios-descuento">$400</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
             <!-- Producto 6 -->
             <div class="producto-tarjeta">
@@ -106,7 +120,7 @@
                 <div class="precios">
                     <span class="precios-descuento">$500</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
             <!-- Producto 7 -->
             <div class="producto-tarjeta">
@@ -116,7 +130,7 @@
                 <div class="precios">
                     <span class="precios-descuento">$150</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
             <!-- Producto 8 -->
             <div class="producto-tarjeta">
@@ -126,7 +140,7 @@
                 <div class="precios">
                     <span class="precios-descuento">$300</span>
                 </div>
-                <button class="btn-carrito">🛒</button>
+                <button class="btn-carrito"><i class='bx  bx-cart bx-md'></i></button>
             </div>
         </section>
         
@@ -220,51 +234,60 @@
     </main>
     <!-- Pie de pagina -->
     <footer>
-        <!-- Seccion Contactanos -->    
-        <section>
-            <h3>Contactanos</h3>
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">TikTok</a></li>
-                <li><a href="">X</a></li>
-            </ul>
-        </section>
         <!-- Seccion Newsletter -->
-        <section>
-            <h3>Newsletter</h3>
-            <form action="" style="color: #F2E8D5;"><!--Formulario de suscripcion-->
-                    <label for="">Correo Electrónico</label>
-                    <input type="email" placeholder="Deja tu correo">
-                    <button type="submit">Suscribirse</button><!--Botón de suscripción-->
-            </form>
-        </section>
-        <!-- Seccion Metodos de pago -->
-        <section>
-            <h3>Metodos de pago</h3>
-            <ul>
-                <li><a href="">Visa</a></li>
-                <li><a href="">Mastercard</a></li>
-                <li><a href="">PayPal</a></li>
-                <li><a href="">American Express</a></li>
-            </ul>
-        </section>
-        <!-- Seccion Informacion -->
-        <section>
-            <h3>Informacion</h3>
-            <ul>
-                <li><a href="">Terminos y Condiciones</a></li>
-                <li><a href="">Politica de Privacidad</a></li>
-                <li><a href="">Envios y Devoluciones</a></li>
-                <li><a href="">Sobre Nosotros</a></li>
-            </ul>
-        </section>
+        <aside class="newsletter">
+            <h2 class="txt-newsletter">
+                <span>Suscríbete a</span>
+                <span>nuestro Newsletter</span>
+            </h2>
+            <div>
+                <form class="form-suscripcion"><!--Formulario de suscripcion-->
+                    <label for="">Correo Electrónico:</label>
+                    <div><!--Contenedor de input y boton-->
+                        <input type="email" placeholder="Deja tu correo">
+                        <button type="submit">Suscribirse</button><!--Botón de suscripción-->
+                    </div>
+                </form>
+            </div>
+        </aside>
+        <div class="contactanos-pagos">
+            <!-- Seccion Informacion -->
+            <section>
+                <h3>Informacion</h3>
+                <ul class="lista-informacion">
+                    <li><a href="">Terminos y Condiciones</a></li>
+                    <li><a href="">Politica de Privacidad</a></li>
+                    <li><a href="">Envios y Devoluciones</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
+                </ul>
+            </section>
+            <!-- Seccion Contactanos -->
+            <section>
+                <h3>Siguenos</h3>
+                <ul class="listas-footer">
+                    <li><a href=""><i class='bxl bx-facebook-circle bx-sm'></i></a></li>
+                    <li><a href=""><i class='bxl bx-instagram bx-sm'></i></a></li>
+                    <li><a href=""><i class='bxl bx-tiktok bx-sm'></i></a></li>
+                    <li><a href=""><i class='bxl bx-twitter-x bx-sm'></i></a></li>
+                </ul>
+            </section>
+            <!-- Seccion Metodos de pago -->
+            <section>
+                <h3>Metodos de pago</h3>
+                <ul class="listas-footer">
+                    <li><i class='bxl bx-visa bx-md'></i> Visa</li>
+                    <li><i class='bxl bx-mastercard bx-md'></i> Mastercard</li>
+                    <li><i class='bxl bx-paypal bx-md'></i> PayPal</li>
+                    <li><i class='bxl bx-amex bx-md'></i> American Express</li>
+                </ul>
+            </section>
+        </div>
         <!-- Seccion Derechos reservados -->
         <section>
-            <p>Derechos reservados © 2024 Muebles</p>
+            <p>Derechos reservados © 2024 Muebles Nordic</p>
         </section>
     </footer>
 
-    <a href ="#catalogo" class="boton-flotante">🛒</a>
+    <a href ="#catalogo" class="boton-flotante"><i class='bx  bx-cart bx-md'></i></a>
 </body>
 </html>

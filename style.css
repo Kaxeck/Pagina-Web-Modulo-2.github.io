@@ -21,6 +21,7 @@ header {
 main section {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    scroll-margin-top: 20px;
 }
 /* Se define el color de fondo del footer */
 footer {
@@ -77,12 +78,28 @@ h3 {
 /* Se eliminan los estilos por defecto de la lista de navegación */
 .lista-navegacion {
     list-style: none;
+    /* Agregando Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 /* Se estilizan los enlaces para que no tengan subrayado y tengan un color específico */
 .lista-navegacion a {
     text-decoration: none;
     color: #34495E;
     font-weight: bold;
+    font-size: 17px;
+}
+.nav-izq {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-der {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 /* Contenedor con espacio lateral automático y ancho máximo */
 .espacio_lateral {
@@ -169,16 +186,20 @@ h3 {
     right: 10px;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     font-size: 1.5rem;
-    color: white;
+    color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: .2s ease;
 }
 /* Efecto hover para el botón de agregar al carrito */
 .btn-carrito:hover {
     background-color: #2C3E50;
+    color: white;
 }
 /* Seccion de ideas */
 /* Contenedor con espacio lateral automático y ancho máximo para ideas */
@@ -271,16 +292,21 @@ h3 {
     - z-index alto para estar por encima de otros elementos
     - Sombra para dar efecto de profundidad
     - Transición suave para el efecto hover
+    - Display flex para centrar el icono
 */
 .boton-flotante {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 30px;
+    right: 30px;
     padding: 10px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     border-radius: 50%;
     background-color: #2C3E50;
+    color: white;
     z-index: 1500;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: .2s ease;
@@ -288,7 +314,135 @@ h3 {
 /* Efecto hover para el boton flotante */
 .boton-flotante:hover {
     background-color: white;
-    color: black;
+    color: #2C3E50;
+}
+/* Seccion pies de pagina */
+/* Margen y padding para secciones de footer */
+footer section {
+    margin: 10px;
+    padding: 10px;
+}
+/* Color blanco para textos en el footer */
+footer h2, footer h3, footer p {
+    color: white;
+}
+/* Estilos para la sección de newsletter 
+    - Fondo de color azul verdoso
+    - Uso de Flexbox para distribuir el contenido
+    - Alineación space-between para separar texto y formulario
+    - justify-content center para centrar verticalmente el contenido
+*/
+.newsletter {
+    background-color: #65D8BC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+/* Estilos para el texto de la newsletter 
+    - Uso de Flexbox para organizar el texto en columna
+    - Alineación a la izquierda
+    - Justificación centrada verticalmente
+*/
+.txt-newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin: 10px;
+    height: 136px;
+}
+/* Estilos para el formulario de suscripción 
+    - Uso de Flexbox para organizar los elementos en columna
+    - Alineación a la izquierda
+    - Justificación centrada verticalmente
+*/
+.form-suscripcion {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    height: 136px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* Estilos para los inputs dentro del formulario de suscripción */
+.form-suscripcion input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+}
+/* Estilos para el botón dentro del formulario de suscripción */
+.form-suscripcion button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;
+}
+/* Efecto hover para el botón del formulario de suscripción */
+.form-suscripcion button:hover {
+    background-color: #2C3E50;
+}
+/* Estilos para las etiquetas dentro del formulario de suscripción */
+.form-suscripcion label {
+    color: white;
+    margin-bottom: 10px;
+}
+/* Estilos para las listas dentro del footer 
+    - Uso de Flexbox para organizar los elementos en fila
+    - Espacio de 20px entre los elementos
+*/
+.listas-footer {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+/* Estilos para los elementos de las listas y enlaces dentro del footer 
+    - Uso de Flexbox para alinear iconos y texto
+    - Justificación centrada verticalmente    
+*/
+.listas-footer li, a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+/* Estilos para la lista de informacion dentro del footer */
+.lista-informacion {
+    list-style: none;
+}
+/* Estilos para los enlaces dentro de la lista de informacion 
+    - Uso de Flexbox para alinear iconos y texto
+    - Justificación centrada verticalmente    
+*/
+.lista-informacion a {
+    margin-bottom: 10px 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0px;
+}
+/* Contenedor para las secciones de contactanos y metodos de pago 
+    - Uso de Flexbox para organizar los elementos en fila
+    - Espacio distribuido entre los elementos
+    - Alineación centrada verticalmente
+*/
+.contactanos-pagos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 /* Seccion home */
 /* Ajuste de padding para la sección de inicio */
