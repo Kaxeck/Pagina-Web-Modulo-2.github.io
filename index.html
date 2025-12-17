@@ -43,8 +43,11 @@
     <main>
         <!-- Seccion home -->
         <section id="home_section">
-            <h1>Home</h1>
-            <img src="img/Presentacion.png" alt="Presentacion de Nordic" class="home-img">
+            <picture>
+                <source media="(max-width: 768px)" srcset="img/Presentacion-Mobile.png">
+                <source media="(min-width: 769px)" srcset="img/Presentacion.png">
+                <img src="img/Presentacion.png" alt="Presentacion de Nordic" class="home-img">
+            </picture>
         </section>
         <!-- Seccion promociones -->
         <section class="espacio_promociones" id="promociones">

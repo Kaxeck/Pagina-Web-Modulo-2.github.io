@@ -19,8 +19,8 @@ header {
     - Se aplica padding vertical para separar las secciones
 */
 main section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     scroll-margin-top: 20px;
 }
 /* Se define el color de fondo del footer */
@@ -510,7 +510,7 @@ footer h2, footer h3, footer p {
 /* Seccion home */
 /* Ajuste de padding para la sección de inicio */
 #home_section {
-    padding-top: 3rem;
+    padding-top: 0;
 }
 /*Boton flotante position fixed
     - Ubicado en la esquina inferior derecha
