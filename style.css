@@ -47,6 +47,7 @@ h2 {
     margin-bottom: 2.5rem;
     font-size: 2rem;
     text-align: center;
+    font-weight: 600;
 }
 /* Estilos específicos para h3 */
 h3 {
@@ -126,6 +127,10 @@ h3 {
 /* Estilo para imagen de home */
 .home-img {
     width: 100%;
+}
+/* Estilo para imagen1 de grid home */ 
+.home1-img {
+    grid-column: 1 / 3;
 }
 /* Seccion de catalogo */
 /* Tarjeta con espacio lateral automático y ancho máximo para productos */
@@ -509,8 +514,19 @@ footer h2, footer h3, footer p {
 }
 /* Seccion home */
 /* Ajuste de padding para la sección de inicio */
-#home_section {
+.home_section {
     padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+/* Estilo para los títulos h3 dentro de la sección de inicio */
+.home_section h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
 }
 /*Boton flotante position fixed
     - Ubicado en la esquina inferior derecha
@@ -581,6 +597,24 @@ footer h2, footer h3, footer p {
     .espacio_lateral_idea,
     .servicios-contenedor {
         max-width: 95%; /* Aprovechar más pantalla en móvil */
+    }
+
+    .home_section {
+    grid-template-columns: 1fr;
+    gap: 0;
+    }
+    .home_section h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+    .home2-img {
+        grid-row: 2 / 3;
+    }
+    .home3-img {
+        grid-row: 3 / 4;
     }
     /* Ajustes para las tarjetas de producto */
     .producto-tarjeta {
