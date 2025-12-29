@@ -81,7 +81,7 @@ h3 {
 
 /* Estilos para el texto dentro del banner superior */
 .top-banner p {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 /* Contenedor del grupo de texto */
@@ -178,6 +178,11 @@ h3 {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+/* Tamaño de los iconos en la navegación */
+.nav-der i {
+    font-size: 34px;
 }
 
 /* Contenedor con espacio lateral automático y ancho máximo para promociones */
@@ -782,12 +787,12 @@ a {
 
     /* Ajustes para el contenedor del banner superior */
     .top-banner {
-        padding: 10px 30px;
+        padding: 8px 10px;
     }
 
     /* Ajustes para el texto del banner superior */
     .top-banner p {
-        font-size: 23px;
+        font-size: 14px;
     }
 
     /* Ajustes para la barra de navegación */
@@ -795,16 +800,26 @@ a {
         padding: 10px 15px;
         height: 81.5px;
     }
-
+    /* Ajustes para el contenedor de las secciones en la barra de navegación */
     .contenedor-navsection {
         top: 81.5px;
         height: calc(100vh - 81.5px);
+    }
+
+    /* Ajustes para los enlaces dentro de las secciones de navegación */
+    .seccion-nav a {
+        font-size: 1.8rem;
     }
 
     /* Ajustes para los elementos de navegación */
     .nav-izq,
     .nav-der {
         gap: 15px;
+    }
+
+    /* Tamaño de los iconos en la navegación */
+    .nav-der i {
+        font-size: 30px;
     }
 
     /* Ajustes para el espacio lateral de contenedores */
@@ -875,7 +890,6 @@ a {
     .form-suscripcion {
         height: auto;
         margin-bottom: 30px;
-
     }
 
     /* Ajustes para el contenedor del formulario de suscripción */
@@ -910,10 +924,35 @@ a {
 /* Ajustes para pantallas con ancho máximo de 480px */
 @media screen and (max-width: 480px) {
 
+    /* Ajustes para el contenedor del banner superior */
+    .top-banner {
+        padding: 5px 5px;
+    }
+
+    /* Ajustes para el texto del banner superior */
+    .top-banner p {
+        font-size: 12px;
+    }
+
     /* Ajustes para la barra de navegación */
     .nav-izq,
     .nav-der {
         gap: 10px;
+    }
+
+    /* Tamaño de los iconos en la navegación */
+    .nav-der i {
+        font-size: 26px;
+    }
+
+    /* Ajuste de espacion para las secciones de navegación */
+    .seccion-nav {
+        padding: 15px 0px;
+    }
+
+    /* Ajustes para los enlaces dentro de las secciones de navegación */
+    .seccion-nav a {
+        font-size: 1.4rem;
     }
 
     /* Ajustes para las tarjetas de producto */
@@ -974,9 +1013,14 @@ a {
 /* Ajustes para pantallas con ancho máximo de 320px */
 @media screen and (max-width: 320px) {
 
-    /* Ajustes para el texto del banner superior */
-    .top-banner p {
-        font-size: 15px;
+    /* Tamaño de los iconos en la navegación */
+    .nav-der i {
+        font-size: 24px;
+    }
+
+    /* Ajustes para los elementos de navegación */
+    .nav-der {
+        gap: 10px; 
     }
 
     /* Ajustes para las tarjetas de producto */
