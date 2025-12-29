@@ -39,17 +39,22 @@
     <!-- Barra de navegacion -->
     <!--Se separa la barra sola para aplicar Position Sticky-->
     <nav class="navegacion">
+        <input class="checkbox" type="checkbox" id="menu">
         <ul class="lista-navegacion">
             <div class="nav-izq">
                 <li><a href="#home"><img src="img/Logo.png" alt="Logo de Nordic" class="logo-img"></a></li>
-                <li class="seccion-nav"><a href="#promociones">Promociones</a></li>
-                <li class="seccion-nav"><a href="#catalogo">Catalogo</a></li>
-                <li class="seccion-nav"><a href="#ideas">Ideas</a></li>
+                <div class="contenedor-navsection">
+                    <li class="seccion-nav"><a href="#promociones">Promociones</a></li>
+                    <li class="seccion-nav"><a href="#catalogo">Catalogo</a></li>
+                    <li class="seccion-nav"><a href="#ideas">Ideas</a></li>
+                </div>
             </div>
             <div class="nav-der">
                 <li><a href="#servicios"><i class='bx  bx-search bx-md'></i> </a></li>
                 <li><a href="#promociones"><i class='bx  bx-cart bx-md'></i> </a></li>
-                <li class="icono-menu"><a href=""><i class='bx  bx-menu bx-md'></i> </a></li>
+                <li class="icono-menu">
+                    <label class="labe-hamburguesa" for="menu"><i class='bx  bx-menu bx-md'></i></label>
+                </li>
             </div>
         </ul>
     </nav>

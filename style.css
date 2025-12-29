@@ -149,6 +149,20 @@ h3 {
 /* Icono de menu oculto por defecto */
 .icono-menu {
     display: none;
+    color: #34495E;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Checkbox oculto para el menu hamburguesa */
+.checkbox {
+    display: none;
+}
+
+/* Contenedor de las secciones en la barra de navegación */
+.contenedor-navsection {
+    display: flex;
+    gap: 30px;
 }
 
 /* Contenedores de navegación izquierda*/
@@ -251,6 +265,8 @@ h3 {
     position: relative;
     transition: all 0.3s ease;
 }
+
+/* Margen entre tarjetas de producto */
 .promocion-contenedor .producto-tarjeta {
     margin: 0 1.1rem;
 }
@@ -447,7 +463,6 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
-    ;
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -718,9 +733,48 @@ a {
         display: block;
     }
 
-    /* Ocultar secciones de navegación */
+    /* Ajustes para la barra de navegación */
+    .navegacion {
+        height: 91.5px;
+    }
+
+/* Contenedor de las secciones en la barra de navegación */
+/* Ajustes para el menu hamburguesa */
+/* Posicion inicial del menu */
+/* Ocultar el contenedor de navegación */
+    .contenedor-navsection {
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 91.5px);
+    flex-direction: column;
+    background-color: #65D8BC;
+    position: absolute;
+    padding: 0px 20px;
+    top: 91.5px;
+    gap: 10px;
+    align-items: start;
+    display: none;
+    }
+
+    /* Cuando el checkbox está marcado, mostrar el contenedor de navegación */
+    .checkbox:checked ~ .lista-navegacion .nav-izq .contenedor-navsection {
+        display: flex;
+    /* Ajuste de altura para que no sobrepase la pantalla */
+    }
+
+    /* Estilos para las secciones de navegación */
     .seccion-nav {
-        display: none;
+        width: 100%;
+        padding: 10px 0px;
+        border-bottom: 1px solid white;
+    }
+
+    /* Estilos para los enlaces dentro de las secciones de navegación */
+    .seccion-nav a {
+        color: white;
+        font-size: 2.5rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
     }
 }
 
@@ -740,6 +794,12 @@ a {
     /* Ajustes para la barra de navegación */
     .navegacion {
         padding: 10px 15px;
+        height: 81.5px;
+    }
+
+    .contenedor-navsection {
+        top: 81.5px;
+        height: calc(100vh - 81.5px);
     }
 
     /* Ajustes para los elementos de navegación */
