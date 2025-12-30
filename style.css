@@ -166,6 +166,10 @@ h3 {
     gap: 30px;
 }
 
+.menu-label {
+    display: flex;
+}
+
 /* Contenedores de navegación izquierda*/
 .nav-izq {
     display: flex;
