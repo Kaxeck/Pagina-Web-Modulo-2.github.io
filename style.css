@@ -74,14 +74,15 @@ h3 {
     background-color: #2C3E50;
     color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 13px 0px;
     display: flex;
     overflow: hidden;
 }
 
 /* Estilos para el texto dentro del banner superior */
 .top-banner p {
-    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* Contenedor del grupo de texto */
@@ -787,12 +788,12 @@ a {
 
     /* Ajustes para el contenedor del banner superior */
     .top-banner {
-        padding: 8px 10px;
+        padding: 12px 0;
     }
 
     /* Ajustes para el texto del banner superior */
     .top-banner p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     /* Ajustes para la barra de navegación */
@@ -924,14 +925,9 @@ a {
 /* Ajustes para pantallas con ancho máximo de 480px */
 @media screen and (max-width: 480px) {
 
-    /* Ajustes para el contenedor del banner superior */
-    .top-banner {
-        padding: 5px 5px;
-    }
-
     /* Ajustes para el texto del banner superior */
     .top-banner p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     /* Ajustes para la barra de navegación */
@@ -1012,6 +1008,16 @@ a {
 
 /* Ajustes para pantallas con ancho máximo de 320px */
 @media screen and (max-width: 320px) {
+
+    /* Ajustes para el contenedor del banner superior */
+    .top-banner {
+        padding: 10px 0;
+    }
+    
+    /* Ajustes para el texto del banner superior */
+    .top-banner p {
+        font-size: 13px;
+    }
 
     /* Tamaño de los iconos en la navegación */
     .nav-der i {
